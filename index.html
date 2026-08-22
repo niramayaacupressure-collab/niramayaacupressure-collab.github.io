@@ -6,13 +6,12 @@
 
 <title>Niramaya | Acupressure Therapy</title>
 
-<meta name="description" content="Niramaya Acupressure Therapy — personalized therapy through Acupressure, Magnet Therapy and Water Color Therapy. Home visits in Durg & Bhilai and online consultations worldwide.">
+<meta name="description" content="Niramaya Therapy — Acupressure, Magnet Therapy and Water Color Therapy. Home visits in Durg & Bhilai and personalized online consultations worldwide.">
 
 <style>
 :root{
   --forest:#16382f;
   --forest2:#244d42;
-  --sage:#789184;
   --cream:#f7f3e9;
   --cream2:#eee8da;
   --paper:#fffdf8;
@@ -45,19 +44,15 @@ a{
   text-decoration:none;
 }
 
-img{
-  max-width:100%;
-}
-
 .container{
   width:min(1120px,calc(100% - 40px));
   margin:auto;
 }
 
-/* NAVIGATION */
+/* NAV */
 
 header{
-  background:rgba(247,243,233,.94);
+  background:rgba(247,243,233,.96);
   border-bottom:1px solid rgba(222,214,199,.7);
   position:sticky;
   top:0;
@@ -111,7 +106,6 @@ header{
   align-items:center;
   gap:25px;
   font-size:14px;
-  color:var(--text);
 }
 
 .nav-links a:hover{
@@ -130,34 +124,18 @@ header{
 .hero{
   position:relative;
   overflow:hidden;
-  min-height:650px;
-  display:flex;
-  align-items:center;
   background:
     radial-gradient(circle at 85% 20%,rgba(184,132,72,.15),transparent 28%),
     radial-gradient(circle at 10% 90%,rgba(120,145,132,.14),transparent 30%),
     var(--cream);
 }
 
-.hero::after{
-  content:"";
-  position:absolute;
-  width:520px;
-  height:520px;
-  border:1px solid rgba(184,132,72,.18);
-  border-radius:50%;
-  right:-180px;
-  top:-120px;
-}
-
 .hero-inner{
-  position:relative;
-  z-index:2;
   display:grid;
   grid-template-columns:1.15fr .85fr;
   gap:70px;
   align-items:center;
-  padding:80px 0;
+  padding:90px 0;
 }
 
 .eyebrow{
@@ -171,7 +149,7 @@ header{
   font-weight:700;
 }
 
-.eyebrow::before{
+.eyebrow:before{
   content:"";
   width:28px;
   height:1px;
@@ -231,40 +209,12 @@ h1{
 
 /* HERO CARD */
 
-.hero-card{
-  position:relative;
-}
-
 .hero-card-main{
   background:var(--forest);
   color:white;
   border-radius:24px;
   padding:38px;
-  position:relative;
-  overflow:hidden;
   box-shadow:0 25px 60px rgba(22,56,47,.18);
-}
-
-.hero-card-main::before{
-  content:"";
-  position:absolute;
-  width:240px;
-  height:240px;
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:50%;
-  right:-90px;
-  top:-80px;
-}
-
-.hero-card-main::after{
-  content:"";
-  position:absolute;
-  width:150px;
-  height:150px;
-  border:1px solid rgba(255,255,255,.09);
-  border-radius:50%;
-  right:-40px;
-  top:-35px;
 }
 
 .hero-card-label{
@@ -275,56 +225,35 @@ h1{
   font-weight:700;
 }
 
-.hero-card h2{
+.hero-card-main h2{
   font-size:31px;
   line-height:1.15;
   margin:13px 0;
-  color:white;
 }
 
-.hero-card p{
+.hero-card-main p{
   color:#d4dfda;
-  font-size:15px;
 }
 
-.hero-card-list{
+.hero-list{
   list-style:none;
   padding:0;
   margin:25px 0 0;
 }
 
-.hero-card-list li{
+.hero-list li{
   padding:11px 0;
   border-top:1px solid rgba(255,255,255,.12);
   font-size:14px;
-  color:#edf3f0;
 }
 
-.hero-card-list li::before{
+.hero-list li:before{
   content:"✓";
   color:var(--gold2);
   margin-right:10px;
-  font-weight:bold;
 }
 
-.hero-card-bottom{
-  background:var(--paper);
-  color:var(--forest);
-  padding:17px 22px;
-  border-radius:12px;
-  position:absolute;
-  bottom:-24px;
-  left:-25px;
-  box-shadow:0 15px 35px rgba(0,0,0,.12);
-  font-size:13px;
-}
-
-.hero-card-bottom strong{
-  display:block;
-  font-size:19px;
-}
-
-/* INTRO STRIP */
+/* STRIP */
 
 .intro-strip{
   background:var(--forest);
@@ -358,7 +287,6 @@ h1{
   align-items:center;
   justify-content:center;
   color:var(--gold2);
-  font-size:18px;
 }
 
 .strip-item strong{
@@ -372,14 +300,14 @@ h1{
   font-size:12px;
 }
 
-/* SECTIONS */
+/* GENERAL */
 
 section{
   padding:95px 0;
 }
 
 .section-heading{
-  max-width:700px;
+  max-width:720px;
   margin-bottom:45px;
 }
 
@@ -409,23 +337,12 @@ section{
   border:1px solid var(--line);
   border-radius:18px;
   padding:34px;
-  position:relative;
-  overflow:hidden;
   transition:.25s;
 }
 
 .therapy-card:hover{
   transform:translateY(-5px);
   box-shadow:0 18px 40px rgba(22,56,47,.08);
-}
-
-.therapy-number{
-  position:absolute;
-  right:20px;
-  top:15px;
-  font-size:58px;
-  font-weight:800;
-  color:rgba(22,56,47,.045);
 }
 
 .therapy-icon{
@@ -450,7 +367,6 @@ section{
 .therapy-card p{
   color:var(--muted);
   font-size:14px;
-  margin:0;
 }
 
 /* EXPERIENCE */
@@ -481,7 +397,6 @@ section{
   color:white;
   border-radius:22px;
   padding:40px;
-  box-shadow:0 20px 50px rgba(22,56,47,.13);
 }
 
 .experience-box h3{
@@ -494,27 +409,20 @@ section{
   color:#cddbd5;
 }
 
-.stat-row{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-  margin-top:30px;
+.signature{
+  margin-top:28px;
+  padding-left:18px;
+  border-left:3px solid var(--gold);
 }
 
-.stat{
-  border-top:1px solid rgba(255,255,255,.18);
-  padding-top:18px;
-}
-
-.stat strong{
+.signature strong{
   display:block;
-  font-size:28px;
-  color:var(--gold2);
+  color:var(--forest);
 }
 
-.stat span{
+.signature span{
   font-size:12px;
-  color:#bdcdc6;
+  color:var(--muted);
 }
 
 /* PROCESS */
@@ -526,17 +434,7 @@ section{
 }
 
 .process{
-  position:relative;
   padding:25px 20px;
-}
-
-.process:not(:last-child)::after{
-  content:"→";
-  position:absolute;
-  right:-13px;
-  top:30px;
-  color:var(--gold);
-  font-size:20px;
 }
 
 .process-number{
@@ -587,23 +485,33 @@ section{
   color:#cedbd5;
 }
 
-.online-features{
+.online-steps{
   list-style:none;
   padding:0;
   margin:30px 0;
+  counter-reset:steps;
 }
 
-.online-features li{
-  padding:11px 0;
+.online-steps li{
+  counter-increment:steps;
+  display:flex;
+  gap:14px;
+  padding:13px 0;
   border-bottom:1px solid rgba(255,255,255,.12);
   color:#e5ece9;
 }
 
-.online-features li::before{
-  content:"✓";
+.online-steps li:before{
+  content:counter(steps);
+  min-width:28px;
+  height:28px;
+  border:1px solid rgba(212,173,118,.5);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   color:var(--gold2);
-  font-weight:bold;
-  margin-right:12px;
+  font-size:12px;
 }
 
 .online-card{
@@ -635,6 +543,15 @@ section{
   color:var(--muted);
 }
 
+.form-note{
+  background:var(--cream2);
+  border-radius:10px;
+  padding:14px;
+  margin:20px 0;
+  font-size:12px;
+  color:var(--muted);
+}
+
 /* ABOUT */
 
 .about-grid{
@@ -651,22 +568,6 @@ section{
 }
 
 .about-text p{
-  color:var(--muted);
-}
-
-.signature{
-  margin-top:28px;
-  padding-left:18px;
-  border-left:3px solid var(--gold);
-}
-
-.signature strong{
-  display:block;
-  color:var(--forest);
-}
-
-.signature span{
-  font-size:12px;
   color:var(--muted);
 }
 
@@ -692,7 +593,7 @@ section{
   font-size:14px;
 }
 
-.about-card li::before{
+.about-card li:before{
   content:"◆";
   color:var(--gold);
   font-size:8px;
@@ -706,9 +607,7 @@ section{
 }
 
 .cta-box{
-  background:
-    radial-gradient(circle at 90% 20%,rgba(212,173,118,.16),transparent 25%),
-    var(--green2);
+  background:var(--forest);
   color:white;
   border-radius:25px;
   padding:60px;
@@ -733,10 +632,6 @@ section{
   background:white;
   color:var(--forest);
   white-space:nowrap;
-}
-
-.cta-box .btn:hover{
-  background:var(--cream);
 }
 
 /* FOOTER */
@@ -787,10 +682,6 @@ footer{
   margin:9px 0;
 }
 
-.footer a:hover{
-  color:white;
-}
-
 .copyright{
   border-top:1px solid rgba(255,255,255,.1);
   padding-top:22px;
@@ -814,10 +705,6 @@ footer{
     width:min(100% - 30px,1120px);
   }
 
-  .hero{
-    min-height:auto;
-  }
-
   .hero-inner,
   .experience-grid,
   .online-grid,
@@ -827,20 +714,15 @@ footer{
   }
 
   .hero-inner{
-    padding:65px 0 90px;
+    padding:65px 0 80px;
   }
 
   h1{
     font-size:44px;
   }
 
-  .hero-card-bottom{
-    left:15px;
-  }
-
   .intro-strip-inner{
     grid-template-columns:1fr;
-    gap:15px;
   }
 
   .strip-item{
@@ -867,10 +749,6 @@ footer{
   .therapy-grid,
   .process-grid{
     grid-template-columns:1fr;
-  }
-
-  .process:not(:last-child)::after{
-    display:none;
   }
 
   .cta-box{
@@ -907,15 +785,8 @@ footer{
     padding:28px;
   }
 
-  .hero-card-bottom{
-    position:relative;
-    left:auto;
-    bottom:auto;
-    margin-top:15px;
-  }
-
-  .stat-row{
-    grid-template-columns:1fr;
+  .cta-box .btn{
+    width:100%;
   }
 }
 </style>
@@ -926,27 +797,25 @@ footer{
 <!-- NAVIGATION -->
 
 <header>
-  <div class="container nav">
+<div class="container nav">
 
-    <a href="#" class="logo">
+<a href="#" class="logo">
+<div class="logo-mark">N</div>
 
-      <div class="logo-mark">N</div>
+<div class="logo-text">
+NIRAMAYA
+<span>ACUPRESSURE THERAPY</span>
+</div>
+</a>
 
-      <div class="logo-text">
-        NIRAMAYA
-        <span>ACUPRESSURE THERAPY</span>
-      </div>
+<nav class="nav-links">
+<a href="#therapies">Therapies</a>
+<a href="#about">About</a>
+<a href="#online">Online</a>
+<a href="#contact" class="nav-button">Start Consultation</a>
+</nav>
 
-    </a>
-
-    <nav class="nav-links">
-      <a href="#therapies">Therapies</a>
-      <a href="#about">About</a>
-      <a href="#online">Online</a>
-      <a href="#contact" class="nav-button">Book Appointment</a>
-    </nav>
-
-  </div>
+</div>
 </header>
 
 
@@ -954,76 +823,71 @@ footer{
 
 <section class="hero">
 
-  <div class="container hero-inner">
+<div class="container hero-inner">
 
-    <div>
+<div>
 
-      <div class="eyebrow">
-        Durg & Bhilai · Worldwide Online
-      </div>
+<div class="eyebrow">
+Durg & Bhilai · Worldwide Online
+</div>
 
-      <h1>
-        Care that comes to you.
-      </h1>
+<h1>
+Care that comes to you.
+</h1>
 
-      <p class="hero-text">
-        Personalized therapy through Acupressure, Magnet Therapy
-        and Water Color Therapy — with home visits in Durg &
-        Bhilai and online guidance wherever you are.
-      </p>
+<p class="hero-text">
+Personalized therapy through Acupressure, Magnet Therapy
+and Water Color Therapy — with home visits in Durg &
+Bhilai and online guidance wherever you are.
+</p>
 
-      <div class="hero-actions">
+<div class="hero-actions">
 
-        <a class="btn" href="#contact">
-          Book an Appointment
-        </a>
+<a class="btn" href="#online">
+Start Online Consultation
+</a>
 
-        <a class="btn btn-outline"
-           href="https://wa.me/917448735892">
-          WhatsApp Niramaya
-        </a>
+<a class="btn btn-outline"
+href="https://wa.me/917448735892">
+WhatsApp Niramaya
+</a>
 
-      </div>
+</div>
 
-    </div>
+</div>
 
 
-    <div class="hero-card">
+<div>
 
-      <div class="hero-card-main">
+<div class="hero-card-main">
 
-        <div class="hero-card-label">
-          Niramaya Therapy
-        </div>
+<div class="hero-card-label">
+Niramaya Therapy
+</div>
 
-        <h2>
-          Personalized guidance, not a one-size-fits-all approach.
-        </h2>
+<h2>
+Personalized guidance, designed around you.
+</h2>
 
-        <p>
-          Every session begins with understanding your concern
-          and your individual needs.
-        </p>
+<p>
+Every consultation begins with understanding your
+concern and your individual needs.
+</p>
 
-        <ul class="hero-card-list">
+<ul class="hero-list">
 
-          <li>Personalized therapy guidance</li>
-          <li>Home visits in Durg & Bhilai</li>
-          <li>Online consultations worldwide</li>
-          <li>Ongoing guidance after consultation</li>
+<li>Personalized therapy guidance</li>
+<li>Home visits in Durg & Bhilai</li>
+<li>Online consultations worldwide</li>
+<li>Ongoing WhatsApp guidance</li>
 
-        </ul>
+</ul>
 
-      </div>
+</div>
 
-      <div class="hero-card-bottom">
-        <strong>11+ Years</strong>
-        Experience in Acupressure Practice
-      </div>
+</div>
 
-    </div>
-
-  </div>
+</div>
 
 </section>
 
@@ -1032,44 +896,42 @@ footer{
 
 <div class="intro-strip">
 
-  <div class="container intro-strip-inner">
+<div class="container intro-strip-inner">
 
-    <div class="strip-item">
+<div class="strip-item">
 
-      <div class="strip-icon">⌂</div>
+<div class="strip-icon">⌂</div>
 
-      <div>
-        <strong>Home Visits</strong>
-        <span>Durg & Bhilai</span>
-      </div>
+<div>
+<strong>Home Visits</strong>
+<span>Durg & Bhilai</span>
+</div>
 
-    </div>
+</div>
 
+<div class="strip-item">
 
-    <div class="strip-item">
+<div class="strip-icon">◎</div>
 
-      <div class="strip-icon">◎</div>
+<div>
+<strong>Online Consultation</strong>
+<span>India & Worldwide</span>
+</div>
 
-      <div>
-        <strong>Online Consultation</strong>
-        <span>India & Worldwide</span>
-      </div>
+</div>
 
-    </div>
+<div class="strip-item">
 
+<div class="strip-icon">↗</div>
 
-    <div class="strip-item">
+<div>
+<strong>Personal Guidance</strong>
+<span>Follow-up WhatsApp support</span>
+</div>
 
-      <div class="strip-icon">↗</div>
+</div>
 
-      <div>
-        <strong>Personal Guidance</strong>
-        <span>Ongoing WhatsApp support</span>
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 </div>
 
@@ -1078,79 +940,73 @@ footer{
 
 <section id="therapies">
 
-  <div class="container">
+<div class="container">
 
-    <div class="section-heading">
+<div class="section-heading">
 
-      <div class="eyebrow">
-        Our Approach
-      </div>
+<div class="eyebrow">
+Our Approach
+</div>
 
-      <h2>
-        Three complementary therapies. One personal approach.
-      </h2>
+<h2>
+Three complementary therapies. One personal approach.
+</h2>
 
-      <p>
-        Niramaya brings together Acupressure, Magnet Therapy
-        and Water Color Therapy as part of its therapeutic practice.
-      </p>
+<p>
+Niramaya brings together Acupressure, Magnet Therapy
+and Water Color Therapy as part of its therapeutic practice.
+</p>
 
-    </div>
-
-
-    <div class="therapy-grid">
-
-      <div class="therapy-card">
-
-        <div class="therapy-number">01</div>
-
-        <div class="therapy-icon">✦</div>
-
-        <h3>Acupressure</h3>
-
-        <p>
-          Personalized guidance on appropriate acupressure
-          points and techniques, with practical instructions
-          that can be followed at home.
-        </p>
-
-      </div>
+</div>
 
 
-      <div class="therapy-card">
+<div class="therapy-grid">
 
-        <div class="therapy-number">02</div>
+<div class="therapy-card">
 
-        <div class="therapy-icon">✧</div>
+<div class="therapy-icon">✦</div>
 
-        <h3>Magnet Therapy</h3>
+<h3>Acupressure</h3>
 
-        <p>
-          Magnet Therapy offered as part of Niramaya's
-          complementary therapeutic approach.
-        </p>
+<p>
+Personalized guidance on appropriate acupressure
+points and techniques, with practical instructions
+that can be followed at home.
+</p>
 
-      </div>
+</div>
 
 
-      <div class="therapy-card">
+<div class="therapy-card">
 
-        <div class="therapy-number">03</div>
+<div class="therapy-icon">✧</div>
 
-        <div class="therapy-icon">◌</div>
+<h3>Magnet Therapy</h3>
 
-        <h3>Water Color Therapy</h3>
+<p>
+Magnet Therapy offered as part of Niramaya's
+complementary therapeutic approach.
+</p>
 
-        <p>
-          Water Color Therapy offered as another
-          complementary approach within Niramaya's practice.
-        </p>
+</div>
 
-      </div>
 
-    </div>
+<div class="therapy-card">
 
-  </div>
+<div class="therapy-icon">◌</div>
+
+<h3>Water Color Therapy</h3>
+
+<p>
+Water Color Therapy offered as another
+complementary approach within Niramaya's practice.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1159,80 +1015,66 @@ footer{
 
 <section class="experience">
 
-  <div class="container experience-grid">
+<div class="container experience-grid">
 
-    <div>
+<div>
 
-      <div class="eyebrow">
-        About Niramaya
-      </div>
+<div class="eyebrow">
+About Niramaya
+</div>
 
-      <h2>
-        Experience that comes with a personal touch.
-      </h2>
+<h2>
+Experience that comes with a personal touch.
+</h2>
 
-      <p>
-        Niramaya Acupressure Therapy is guided by
-        <strong>Ajit Kumar Pandey</strong>, with more than
-        11 years of experience in acupressure practice.
-      </p>
+<p>
+Niramaya Acupressure Therapy is guided by
+<strong>Ajit Kumar Pandey</strong>, with more than
+11 years of experience in acupressure practice.
+</p>
 
-      <p>
-        The focus is on understanding each person's concern
-        and providing clear, practical guidance that can be
-        incorporated into everyday life.
-      </p>
+<p>
+The focus is on understanding each person's concern
+and providing clear, practical guidance that can be
+incorporated into everyday life.
+</p>
 
-      <div class="signature">
+<div class="signature">
 
-        <strong>Ajit Kumar Pandey</strong>
+<strong>Ajit Kumar Pandey</strong>
 
-        <span>
-          Certified in Acupressure & Magnet Therapy —
-          NIARTT, Chandigarh
-        </span>
+<span>
+Certified in Acupressure & Magnet Therapy —
+NIARTT, Chandigarh
+</span>
 
-        <br>
+<br>
 
-        <span>
-          Diploma in Acupressure Therapy —
-          Moksha Marg Foundation
-        </span>
+<span>
+Diploma in Acupressure Therapy —
+Moksha Marg Foundation
+</span>
 
-      </div>
+</div>
 
-    </div>
+</div>
 
 
-    <div class="experience-box">
+<div class="experience-box">
 
-      <h3>
-        Aapki seva, aapke ghar.
-      </h3>
+<h3>
+Aapki seva, aapke ghar.
+</h3>
 
-      <p>
-        Niramaya is built around a simple idea:
-        therapy should be personal, understandable
-        and convenient.
-      </p>
+<p>
+Niramaya is built around a simple idea:
+therapy should be personal, understandable
+and convenient.
+</p>
 
-      <div class="stat-row">
+</div>
 
-        <div class="stat">
-          <strong>11+</strong>
-          <span>Years of experience</span>
-        </div>
-
-        <div class="stat">
-          <strong>2</strong>
-          <span>Durg & Bhilai home-visit areas</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
@@ -1241,86 +1083,86 @@ footer{
 
 <section>
 
-  <div class="container">
+<div class="container">
 
-    <div class="section-heading">
+<div class="section-heading">
 
-      <div class="eyebrow">
-        Your Journey
-      </div>
+<div class="eyebrow">
+Your Journey
+</div>
 
-      <h2>
-        Simple from the first conversation.
-      </h2>
+<h2>
+Simple from the first conversation.
+</h2>
 
-      <p>
-        We want the process to be easy to understand and
-        comfortable for every client.
-      </p>
+<p>
+We want the process to be easy to understand
+and comfortable for every client.
+</p>
 
-    </div>
-
-
-    <div class="process-grid">
-
-      <div class="process">
-
-        <div class="process-number">1</div>
-
-        <h3>Tell us about your concern</h3>
-
-        <p>
-          Share your concern and relevant details
-          with Niramaya.
-        </p>
-
-      </div>
+</div>
 
 
-      <div class="process">
+<div class="process-grid">
 
-        <div class="process-number">2</div>
+<div class="process">
 
-        <h3>Understand your needs</h3>
+<div class="process-number">1</div>
 
-        <p>
-          Your information helps us understand
-          your individual situation.
-        </p>
+<h3>Tell us about your concern</h3>
 
-      </div>
+<p>
+Complete the detailed consultation form
+before your online consultation.
+</p>
 
-
-      <div class="process">
-
-        <div class="process-number">3</div>
-
-        <h3>Receive personalized guidance</h3>
-
-        <p>
-          Get detailed instructions and guidance
-          suited to your consultation.
-        </p>
-
-      </div>
+</div>
 
 
-      <div class="process">
+<div class="process">
 
-        <div class="process-number">4</div>
+<div class="process-number">2</div>
 
-        <h3>Stay connected</h3>
+<h3>Your information is reviewed</h3>
 
-        <p>
-          Follow-up guidance can continue through
-          WhatsApp as appropriate.
-        </p>
+<p>
+The information you provide helps Niramaya
+understand your concerns before the consultation.
+</p>
 
-      </div>
+</div>
 
-    </div>
 
-  </div>
+<div class="process">
+
+<div class="process-number">3</div>
+
+<h3>Online consultation</h3>
+
+<p>
+Connect for a personalized one-to-one
+online consultation.
+</p>
+
+</div>
+
+
+<div class="process">
+
+<div class="process-number">4</div>
+
+<h3>Guidance & follow-up</h3>
+
+<p>
+Receive personalized instructions, videos
+and ongoing WhatsApp guidance.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1329,141 +1171,157 @@ footer{
 
 <section class="online" id="online">
 
-  <div class="container online-grid">
+<div class="container online-grid">
 
-    <div>
+<div>
 
-      <div class="eyebrow">
-        Online Consultation
-      </div>
+<div class="eyebrow">
+Online Consultation
+</div>
 
-      <h2>
-        Guidance that continues beyond the call.
-      </h2>
+<h2>
+Your consultation begins before the video call.
+</h2>
 
-      <p>
-        Online consultation is designed to be more than
-        a simple video conversation.
-      </p>
+<p>
+Before your consultation, we ask you to complete
+a detailed treatment information form. This helps
+Niramaya understand your concerns and relevant
+details beforehand.
+</p>
 
-      <ul class="online-features">
+<ol class="online-steps">
 
-        <li>Detailed information collected before consultation</li>
+<li>
+Complete the detailed consultation form.
+</li>
 
-        <li>Personalized therapy guidance</li>
+<li>
+Niramaya reviews the information you provide.
+</li>
 
-        <li>Detailed videos explaining how to perform techniques</li>
+<li>
+Proceed with your online consultation.
+</li>
 
-        <li>Guidance on when and how long to follow the routine</li>
+<li>
+Receive personalized guidance and follow-up support.
+</li>
 
-        <li>Follow-up WhatsApp guidance</li>
+</ol>
 
-      </ul>
-
-    </div>
+</div>
 
 
-    <div class="online-card">
+<div class="online-card">
 
-      <h3>
-        Online Consultation
-      </h3>
+<h3>
+Start Your Online Consultation
+</h3>
 
-      <p>
-        One-to-one online consultation.
-      </p>
+<p>
+First, complete the detailed Niramaya consultation form.
+</p>
 
-      <div class="price-row">
+<div class="price-row">
 
-        <strong>₹500</strong>
+<strong>₹500</strong>
 
-        <span>India</span>
+<span>India</span>
 
-      </div>
+</div>
 
-      <div class="price-row">
+<div class="price-row">
 
-        <strong>$15</strong>
+<strong>$15</strong>
 
-        <span>International</span>
+<span>International</span>
 
-      </div>
+</div>
 
-      <a class="btn"
-         href="https://wa.me/917448735892?text=Hello%20Niramaya%2C%20I%20would%20like%20to%20know%20more%20about%20an%20online%20consultation.">
-        Enquire on WhatsApp
-      </a>
+<div class="form-note">
+Please complete the consultation form before
+proceeding with your online consultation.
+</div>
 
-    </div>
+<a class="btn"
+href="https://docs.google.com/forms/d/e/1FAIpQLSfrkBt9EXLSq3I0jGcV7RC6C2X2-2aKdX5dpdBkiySHlBD9cQ/viewform?usp=sharing"
+target="_blank">
 
-  </div>
+Complete Consultation Form
+
+</a>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- ABOUT APPROACH -->
+<!-- ABOUT -->
 
 <section id="about">
 
-  <div class="container about-grid">
+<div class="container about-grid">
 
-    <div class="about-text">
+<div class="about-text">
 
-      <div class="eyebrow">
-        Our Philosophy
-      </div>
+<div class="eyebrow">
+Our Philosophy
+</div>
 
-      <h2>
-        Make therapy simple to understand.
-      </h2>
+<h2>
+Make therapy simple to understand.
+</h2>
 
-      <p>
-        The right guidance is not just about knowing a point
-        or technique. It is also about understanding where,
-        when, how and for how long it should be practiced.
-      </p>
+<p>
+The right guidance is not just about knowing a point
+or technique. It is also about understanding where,
+when, how and for how long it should be practiced.
+</p>
 
-      <p>
-        That's why Niramaya focuses on personal guidance,
-        clear instructions and practical follow-up.
-      </p>
+<p>
+That's why Niramaya focuses on personal guidance,
+clear instructions and practical follow-up.
+</p>
 
-    </div>
+</div>
 
 
-    <div class="about-card">
+<div class="about-card">
 
-      <h3>
-        What you can expect
-      </h3>
+<h3>
+What you can expect
+</h3>
 
-      <ul>
+<ul>
 
-        <li>
-          Personal attention to your concern
-        </li>
+<li>
+Personal attention to your concern
+</li>
 
-        <li>
-          Clear and practical instructions
-        </li>
+<li>
+Clear and practical instructions
+</li>
 
-        <li>
-          Detailed guidance videos where applicable
-        </li>
+<li>
+Detailed guidance videos where applicable
+</li>
 
-        <li>
-          Guidance on timing and duration
-        </li>
+<li>
+Guidance on timing and duration
+</li>
 
-        <li>
-          Follow-up communication through WhatsApp
-        </li>
+<li>
+Follow-up communication through WhatsApp
+</li>
 
-      </ul>
+</ul>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </section>
 
@@ -1472,35 +1330,38 @@ footer{
 
 <section class="cta" id="contact">
 
-  <div class="container">
+<div class="container">
 
-    <div class="cta-box">
+<div class="cta-box">
 
-      <div>
+<div>
 
-        <div class="eyebrow">
-          Get Started
-        </div>
+<div class="eyebrow">
+Get Started
+</div>
 
-        <h2>
-          Let's talk about your concern.
-        </h2>
+<h2>
+Let's talk about your concern.
+</h2>
 
-        <p>
-          Contact Niramaya for appointments, home visits
-          or online consultation enquiries.
-        </p>
+<p>
+For online consultation, start by completing
+the detailed Niramaya consultation form.
+</p>
 
-      </div>
+</div>
 
-      <a class="btn"
-         href="https://wa.me/917448735892?text=Hello%20Niramaya%2C%20I%20would%20like%20to%20book%20an%20appointment.">
-        WhatsApp Niramaya
-      </a>
+<a class="btn"
+href="https://docs.google.com/forms/d/e/1FAIpQLSfrkBt9EXLSq3I0jGcV7RC6C2X2-2aKdX5dpdBkiySHlBD9cQ/viewform?usp=sharing"
+target="_blank">
 
-    </div>
+Start Consultation
 
-  </div>
+</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1509,63 +1370,63 @@ footer{
 
 <footer>
 
-  <div class="container">
+<div class="container">
 
-    <div class="footer-grid">
+<div class="footer-grid">
 
-      <div>
+<div>
 
-        <div class="footer-brand">
-          NIRAMAYA
-          <small>ACUPRESSURE THERAPY</small>
-        </div>
+<div class="footer-brand">
+NIRAMAYA
+<small>ACUPRESSURE THERAPY</small>
+</div>
 
-        <p>
-          Acupressure, Magnet Therapy and Water Color Therapy.
-          Home visits in Durg & Bhilai and online consultations worldwide.
-        </p>
+<p>
+Acupressure, Magnet Therapy and Water Color Therapy.
+Home visits in Durg & Bhilai and online consultations worldwide.
+</p>
 
-      </div>
-
-
-      <div>
-
-        <h4>Explore</h4>
-
-        <a href="#therapies">Therapies</a>
-        <a href="#about">About Niramaya</a>
-        <a href="#online">Online Consultation</a>
-        <a href="#contact">Contact</a>
-
-      </div>
+</div>
 
 
-      <div>
+<div>
 
-        <h4>Contact</h4>
+<h4>Explore</h4>
 
-        <a href="https://wa.me/917448735892">
-          +91 74487 35892
-        </a>
+<a href="#therapies">Therapies</a>
+<a href="#about">About Niramaya</a>
+<a href="#online">Online Consultation</a>
+<a href="#contact">Contact</a>
 
-        <a href="mailto:Niramaya.acupressure@gmail.com">
-          Niramaya.acupressure@gmail.com
-        </a>
-
-        <a href="https://wa.me/917448735892">
-          WhatsApp
-        </a>
-
-      </div>
-
-    </div>
+</div>
 
 
-    <div class="copyright">
-      © 2026 Niramaya Acupressure Therapy. All rights reserved.
-    </div>
+<div>
 
-  </div>
+<h4>Contact</h4>
+
+<a href="https://wa.me/917448735892">
++91 74487 35892
+</a>
+
+<a href="mailto:Niramaya.acupressure@gmail.com">
+Niramaya.acupressure@gmail.com
+</a>
+
+<a href="https://wa.me/917448735892">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+© 2026 Niramaya Acupressure Therapy. All rights reserved.
+</div>
+
+</div>
 
 </footer>
 
