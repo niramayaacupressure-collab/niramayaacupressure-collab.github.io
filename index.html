@@ -590,6 +590,125 @@ section{
   color:var(--muted);
 }
 
+
+/* HOME VISITS & PAYMENTS */
+
+.home-visits{
+  background:var(--paper);
+}
+
+.home-visit-intro{
+  max-width:760px;
+}
+
+.home-visit-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  margin-top:38px;
+}
+
+.visit-card{
+  background:var(--cream);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  min-height:285px;
+}
+
+.visit-card.featured{
+  border-color:rgba(184,132,72,.55);
+  box-shadow:0 14px 34px rgba(22,56,47,.07);
+}
+
+.visit-label{
+  display:inline-block;
+  width:max-content;
+  font-size:10px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:1.7px;
+  color:var(--gold);
+  margin-bottom:10px;
+}
+
+.visit-card h3{
+  margin:0 0 8px;
+  color:var(--forest);
+  font-size:22px;
+}
+
+.visit-duration{
+  color:var(--muted);
+  font-size:13px;
+  margin-bottom:18px;
+}
+
+.visit-price{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  margin:4px 0 14px;
+}
+
+.visit-price strong{
+  font-size:34px;
+  color:var(--forest);
+}
+
+.visit-price del{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.visit-card p{
+  color:var(--muted);
+  font-size:13px;
+  margin:0 0 18px;
+}
+
+.visit-card .btn{
+  margin-top:auto;
+  width:100%;
+}
+
+.visit-note{
+  margin-top:24px;
+  background:var(--cream2);
+  border-left:4px solid var(--gold);
+  border-radius:10px;
+  padding:18px 20px;
+  color:var(--text);
+  font-size:13px;
+}
+
+.visit-note strong{
+  color:var(--forest);
+}
+
+.payment-note{
+  margin-top:18px;
+  padding:16px 18px;
+  border:1px dashed rgba(184,132,72,.65);
+  border-radius:12px;
+  color:var(--muted);
+  font-size:12px;
+}
+
+.payment-note strong{
+  color:var(--forest);
+}
+
+.btn-gold{
+  background:var(--gold);
+}
+
+.btn-gold:hover{
+  background:#9f713b;
+}
+
 /* ABOUT */
 
 .about-grid{
@@ -793,7 +912,8 @@ footer{
   }
 
   .therapy-grid,
-  .process-grid{
+  .process-grid,
+  .home-visit-grid{
     grid-template-columns:1fr;
   }
 
@@ -862,6 +982,7 @@ NIRAMAYA
 <a href="#therapies">Therapies</a>
 <a href="#therapist">Therapist</a>
 <a href="#about">About</a>
+<a href="#home-visits">Home Visits</a>
 <a href="#online">Online</a>
 <a href="#contact" class="nav-button">Start Consultation</a>
 </nav>
@@ -899,7 +1020,7 @@ Start Online Consultation
 </a>
 
 <a class="btn btn-outline"
-href="https://wa.me/917448735892">
+href="https://wa.me/917488735892">
 WhatsApp Niramaya
 </a>
 
@@ -1163,8 +1284,8 @@ and comfortable for every client.
 <h3>Tell us about your concern</h3>
 
 <p>
-Complete the detailed consultation form
-before your online consultation.
+Contact Niramaya with your concern and the
+type of consultation or home visit you need.
 </p>
 
 </div>
@@ -1218,6 +1339,104 @@ and ongoing WhatsApp guidance.
 </section>
 
 
+
+<!-- HOME VISIT THERAPY -->
+<section class="home-visits" id="home-visits">
+<div class="container">
+
+<div class="section-heading home-visit-intro">
+<div class="eyebrow">Home Visit Therapy · Durg & Bhilai</div>
+
+<h2>Personal therapy guidance at your home.</h2>
+
+<p>
+Niramaya offers home visits in Durg &amp; Bhilai. Sessions are generally
+40–60 minutes. Choose a single visit or a package depending on the
+support you need.
+</p>
+</div>
+
+<div class="home-visit-grid">
+
+<div class="visit-card featured">
+<span class="visit-label">Introductory Offer</span>
+<h3>First Home Visit</h3>
+<div class="visit-duration">40–60 minutes</div>
+<div class="visit-price">
+<strong>₹250</strong>
+<del>₹500</del>
+</div>
+<p>50% introductory discount on the first home-visit session.</p>
+<a class="btn btn-gold"
+   href="https://payments.cashfree.com/forms/niramaya-services"
+   target="_blank" rel="noopener">
+Book / Pay for Niramaya Services
+</a>
+</div>
+
+<div class="visit-card">
+<span class="visit-label">Single Session</span>
+<h3>Single Home Visit</h3>
+<div class="visit-duration">40–60 minutes</div>
+<div class="visit-price">
+<strong>₹500</strong>
+</div>
+<p>One complete home-visit therapy session.</p>
+<a class="btn"
+   href="https://payments.cashfree.com/forms/niramaya-services"
+   target="_blank" rel="noopener">
+Book / Pay for Niramaya Services
+</a>
+</div>
+
+<div class="visit-card">
+<span class="visit-label">5-Session Package</span>
+<h3>5 Home Visits</h3>
+<div class="visit-duration">40–60 minutes per session</div>
+<div class="visit-price">
+<strong>₹2,250</strong>
+</div>
+<p>Equivalent to ₹450 per session.</p>
+<a class="btn"
+   href="https://payments.cashfree.com/forms/niramaya-services"
+   target="_blank" rel="noopener">
+Book / Pay for Niramaya Services
+</a>
+</div>
+
+<div class="visit-card">
+<span class="visit-label">10-Session Package</span>
+<h3>10 Home Visits</h3>
+<div class="visit-duration">40–60 minutes per session</div>
+<div class="visit-price">
+<strong>₹4,000</strong>
+</div>
+<p>Equivalent to ₹400 per session.</p>
+<a class="btn"
+   href="https://payments.cashfree.com/forms/niramaya-services"
+   target="_blank" rel="noopener">
+Book / Pay for Niramaya Services
+</a>
+</div>
+
+</div>
+
+<div class="visit-note">
+<strong>Additional distance charge:</strong> ₹100 per visit where applicable.
+Please confirm the home-visit location with Niramaya before payment if you
+are unsure whether the additional distance charge applies.
+</div>
+
+<div class="payment-note">
+Use the single Niramaya payment form for online consultation, home visits and therapy packages.
+Enter the applicable amount shown for the service you are booking.
+</div>
+
+
+</div>
+</section>
+
+
 <!-- ONLINE CONSULTATION -->
 
 <section class="online" id="online">
@@ -1235,16 +1454,15 @@ Your consultation begins before the video call.
 </h2>
 
 <p>
-Before your consultation, we ask you to complete
-a detailed treatment information form. This helps
-Niramaya understand your concerns and relevant
-details beforehand.
+Before your consultation, share the relevant details about your
+concern with Niramaya. This helps us understand your needs before
+the consultation and provide more focused guidance.
 </p>
 
 <ol class="online-steps">
 
 <li>
-Complete the detailed consultation form.
+Share the relevant details about your concern.
 </li>
 
 <li>
@@ -1271,7 +1489,7 @@ Start Your Online Consultation
 </h3>
 
 <p>
-First, complete the detailed Niramaya consultation form.
+For an India online consultation, the consultation fee is ₹500.
 </p>
 
 <div class="price-row">
@@ -1286,20 +1504,29 @@ First, complete the detailed Niramaya consultation form.
 
 <strong>$15</strong>
 
-<span>International</span>
+<span>International · payment setup in progress</span>
 
 </div>
 
 <div class="form-note">
-Please complete the consultation form before
-proceeding with your online consultation.
+After payment, contact Niramaya on WhatsApp with your name and payment reference.
 </div>
 
 <a class="btn"
-href="https://docs.google.com/forms/d/e/1FAIpQLSfrkBt9EXLSq3I0jGcV7RC6C2X2-2aKdX5dpdBkiySHlBD9cQ/viewform?usp=sharing"
-target="_blank">
+href="https://payments.cashfree.com/forms/niramaya-services"
+target="_blank" rel="noopener">
 
-Complete Consultation Form
+Book / Pay for Niramaya Services
+
+</a>
+
+<br><br>
+
+<a class="btn btn-outline"
+href="https://wa.me/917488735892"
+target="_blank" rel="noopener">
+
+Send Details on WhatsApp
 
 </a>
 
@@ -1396,17 +1623,17 @@ Let's talk about your concern.
 </h2>
 
 <p>
-For online consultation, start by completing
-the detailed Niramaya consultation form.
+For online consultation or a home visit, contact Niramaya on WhatsApp
+to confirm the service, appointment and applicable fee.
 </p>
 
 </div>
 
 <a class="btn"
-href="https://docs.google.com/forms/d/e/1FAIpQLSfrkBt9EXLSq3I0jGcV7RC6C2X2-2aKdX5dpdBkiySHlBD9cQ/viewform?usp=sharing"
-target="_blank">
+href="https://wa.me/917488735892"
+target="_blank" rel="noopener">
 
-Start Consultation
+WhatsApp Niramaya
 
 </a>
 
@@ -1447,6 +1674,7 @@ Home visits in Durg & Bhilai and online consultations worldwide.
 <a href="#therapies">Therapies</a>
 <a href="#therapist">Meet the Therapist</a>
 <a href="#about">About Niramaya</a>
+<a href="#home-visits">Home Visit Therapy</a>
 <a href="#online">Online Consultation</a>
 <a href="#contact">Contact</a>
 
@@ -1457,15 +1685,15 @@ Home visits in Durg & Bhilai and online consultations worldwide.
 
 <h4>Contact</h4>
 
-<a href="https://wa.me/917448735892">
-+91 74487 35892
+<a href="https://wa.me/917488735892">
++91 74887 35892
 </a>
 
 <a href="mailto:Niramaya.acupressure@gmail.com">
 Niramaya.acupressure@gmail.com
 </a>
 
-<a href="https://wa.me/917448735892">
+<a href="https://wa.me/917488735892">
 WhatsApp
 </a>
 
